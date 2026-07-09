@@ -21,7 +21,9 @@ This project is a machine learning web application that predicts the likelihood 
 * NumPy
 * Scikit-learn
 * Joblib
-
+* 
+**TEST FILE:** `HrishikeshDeka_submission.csv` (included in this repository) can be used to test the Streamlit application.
+  
 ## Files
 
 * `app.py` – Streamlit application
@@ -43,14 +45,7 @@ Run the application:
 ```bash
 streamlit run app.py
 ```
-Using the App:
-Launch the Streamlit application.
-Upload the sample test file HrishikeshDeka_submission.csv available in this repository.
 
-The application will:
-Predict whether each healthcare provider is potentially fraudulent.
-Display the fraud probability for each provider.
-Download the prediction results as a CSV file using the download option provided in the app.
 
 ## Author
 
