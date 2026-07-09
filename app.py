@@ -25,19 +25,33 @@ st.markdown("---")
 st.subheader("Observations")
 
 st.markdown("""
-- Almost **62%** of cases are non-fraudulent compared to **38%** fraudulent.
-- Most patients are between **70 and 80 years** of age, with a small proportion below 30.
-- **Gender 2** has a higher number of beneficiaries than Gender 1.
+- Almost **62%** of cases are non-fraudulent compared to 8% fraudulent.
+- Most patients are between 70 and 80 years of age, with a small proportion below 30.
+- Gender 2 has a higher number of beneficiaries than Gender 1.
 - Both genders have more non-fraudulent than fraudulent cases, although Gender 2 has a higher number of fraud cases.
 - **Race 1** accounts for the majority of beneficiaries.
-- Fraudulent and non-fraudulent cases for **Races 3 and 5** are nearly equal.
-- Most outpatient claims are reimbursed for **less than $20,000**, while some inpatient claims exceed **$120,000**.
+- Fraudulent and non-fraudulent cases for Races 3 and 5 are nearly equal.
+- Most outpatient claims are reimbursed for less than $20,000, while some inpatient claims exceed $120,000.
 - Inpatient reimbursements are distributed over a much wider range than outpatient reimbursements.
-- **DiagnosisGroupCode 882** has the highest number of claims.
-- Most claims are filed within **3 days**.
-- Claims filed after **20 days** are generally associated with reimbursements exceeding **$15,000**.
-- **Provider PRV51459** has the highest number of fraudulent cases.
+- DiagnosisGroupCode 882 has the highest number of claims.
+- Most claims are filed within 3 days.
+- Claims filed after 20 days are generally associated with reimbursements exceeding **$15,000**.
+- Provider PRV51459 has the highest number of fraudulent cases.
 - **Chronic ischemic heart disease** is the most common chronic condition, while **chronic stroke** is the least common.
+""")
+
+st.markdown("---")
+st.subheader("Business Recommendations")
+
+st.markdown("""
+- Providers with a high number of fraudulent claims should be prioritized for detailed audits and investigations.
+- Implement additional verification procedures for inpatient claims, as they involve a wider range of reimbursement amounts and higher financial risk.
+- Monitor claims filed after 20 days, as they are generally associated with higher reimbursement amounts.
+- Continuously monitor providers with frequent claims under DiagnosisGroupCode 882 to identify unusual billing patterns or potential overutilization.
+- Analyze claims from providers serving minority patient groups (Races 3 and 5) to identify any unusual fraud trends.
+- Strengthen monitoring of claims involving chronic ischemic heart disease, as it represents the largest patient population and accounts for a significant portion of healthcare expenditure.
+- Use the fraud prediction model as an early warning system to flag high-risk providers before claim settlement, reducing financial losses and improving audit efficiency.
+- Establish real-time monitoring dashboards to track provider performance, reimbursement trends, and emerging fraud patterns.
 """)
 
     
