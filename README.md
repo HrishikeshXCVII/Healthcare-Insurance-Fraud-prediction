@@ -2,6 +2,8 @@
 
 # Provider Fraud Predictor
 
+**TEST FILE:** `HrishikeshDeka_submission.csv` (included in this repository) can be used to test the Streamlit application.
+
 ## Overview
 
 This project is a machine learning web application that predicts the likelihood of healthcare provider fraud using a Logistic Regression model. The application is built with Streamlit and allows users to upload a CSV file to generate fraud predictions and fraud probabilities.
@@ -22,7 +24,7 @@ This project is a machine learning web application that predicts the likelihood 
 * Scikit-learn
 * Joblib
 * 
-**TEST FILE:** `HrishikeshDeka_submission.csv` (included in this repository) can be used to test the Streamlit application.
+
   
 ## Files
 
