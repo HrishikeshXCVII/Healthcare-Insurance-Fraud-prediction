@@ -26,7 +26,7 @@ st.subheader("Observations")
 
 st.markdown("""
 - Almost **62%** of cases are non-fraudulent compared to 8% fraudulent.
-- Most patients are between 70 and 80 years of age, with a small proportion below 30.
+- Most patients are between 70 and 80 years of age. Most fraudulent cases happen to patients above 65
 - Gender 2 has a higher number of beneficiaries than Gender 1.
 - Both genders have more non-fraudulent than fraudulent cases, although Gender 2 has a higher number of fraud cases.
 - **Race 1** accounts for the majority of beneficiaries.
@@ -46,6 +46,7 @@ st.subheader("Business Recommendations")
 st.markdown("""
 - Providers with a high number of fraudulent claims should be prioritized for detailed audits and investigations.
 - Implement additional verification procedures for inpatient claims, as they involve a wider range of reimbursement amounts and higher financial risk.
+- Monitoring the claims of patients above 65 as they face most number of fraud cases.
 - Monitor claims filed after 20 days, as they are generally associated with higher reimbursement amounts.
 - Continuously monitor providers with frequent claims under DiagnosisGroupCode 882 to identify unusual billing patterns or potential overutilization.
 - Analyze claims from providers serving minority patient groups (Races 3 and 5) to identify any unusual fraud trends.
