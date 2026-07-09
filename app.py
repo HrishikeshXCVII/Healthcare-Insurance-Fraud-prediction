@@ -49,7 +49,7 @@ st.markdown("""
 **Reason for Selection:**
 
 - Achieved a high **Recall (87.13%)**, allowing model to identify majority of fraudulent providers and minimize the number  missed fraud cases.
-- Obtained an **ROC-AUC score of **0.956**, That means the model is strongly able to distinguish between fraudulent and non-fraudulent providers across different probability thresholds.
+- Obtained an ROC-AUC score of **0.956**, That means the model is strongly able to distinguish between fraudulent and non-fraudulent providers across different probability thresholds.
 - Although Random Forest achieved higher precision and F1-score, Logistic Regression was selected because, in healthcare fraud detection, missing fraudulent providers is generally more costly than investigating additional false positives.
 """)
 
