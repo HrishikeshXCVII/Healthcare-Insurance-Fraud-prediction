@@ -1,4 +1,4 @@
-import streamlit as st, pandas as pd, joblib
+import streamlit as st, pandas as pd, joblib,numpy as np
 
 model = joblib.load('fraud_model.pkl')
 scaler = joblib.load('scaler.pkl')
@@ -16,11 +16,9 @@ if f is not None:
 
     data['FraudProbability'] = model.predict_proba(X_scaled)[:, 1]
 
-    data['PredictedFraud'] = (
-        model.predict(X_scaled)
-        .astype(int)
-        .map({1: 'Yes', 0: 'No'})
-    )
+    pred = model.predict(X_scaled)
+
+    data['PredictedFraud'] = np.where(pred == 1, 'Yes', 'No')
 
     st.dataframe(data)
 
