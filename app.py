@@ -15,11 +15,20 @@ if f is not None:
     X_scaled = scaler.transform(X)
 
     data['FraudProbability'] = model.predict_proba(X_scaled)[:, 1]
-    data['PredictedFraud'] = model.predict(X_scaled)
+
+    data['PredictedFraud'] = (
+        model.predict(X_scaled)
+        .astype(int)
+        .map({1: 'Yes', 0: 'No'})
+    )
 
     st.dataframe(data)
 
-    st.download_button('Download predictions',data.to_csv(index=False),'predictions.csv')
+    st.download_button(
+        'Download predictions',
+        data.to_csv(index=False),
+        'predictions.csv',
+        'text/csv')
     
 st.markdown("---")
 st.subheader("Observations")
